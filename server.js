@@ -20,7 +20,7 @@ const page = `<!doctype html>
 <body>
   <main>
     <h1>Ça tourne dans le cloud ☁️</h1>
-    <p>Appli déployée par Warrick.</p>
+    <p>You solid Saint?</p>
     <p>Teste l'API : <code>/api/status</code></p>
   </main>
 </body>
