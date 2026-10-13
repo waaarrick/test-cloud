@@ -85,6 +85,11 @@ const page = `<!doctype html>
         const b = document.createElement("b");
         b.textContent = m.name;
         div.append(b, " : ", document.createTextNode(m.text));
+        if (m.created_at) {
+  const small = document.createElement("small");
+  small.textContent = " · " + new Date(m.created_at).toLocaleString("fr-FR");
+  div.append(small);
+}
         list.append(div);
       });
     }
