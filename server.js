@@ -1,5 +1,5 @@
 const http = require("http");
-const { Pool  = require("pg");
+const { Pool } = require("pg");
 
 const PORT = process.env.PORT || 8080;
 const APP_NAME = process.env.APP_NAME || "Livre d'or";
