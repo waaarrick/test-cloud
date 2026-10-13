@@ -37,7 +37,7 @@ async function init() {
 
 async function listMessages() {
   if (!pool) return memory.slice(-50);
-  const res = await pool.query("SELECT name, text FROM messages ORDER BY id DESC LIMIT 50");
+  const res = await pool.query("SELECT name, text, created_at FROM messages ORDER BY id DESC LIMIT 50");
   return res.rows.reverse(); // du plus ancien au plus récent
 }
 
