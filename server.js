@@ -65,6 +65,7 @@ const page = `<!doctype html>
     button { background: #38bdf8; cursor: pointer; font-weight: 600; }
     .msg { background: #1e293b; padding: .8rem; border-radius: 8px; margin-top: .6rem; }
     .msg b { color: #38bdf8; }
+    .msg small { color: #94a3b8; }
   </style>
 </head>
 <body>
