@@ -1,0 +1,22 @@
+name: Vérifications
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Vérifier la syntaxe du code
+        run: node --check server.js
+
+      - name: Vérifier que l'image Docker se construit
+        run: docker build -t test-cloud .
