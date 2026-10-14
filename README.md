@@ -109,4 +109,4 @@ Puis ouvrir http://localhost:8080.
 
 ## Auteur
 
-Warrick Mansoibou, étudiant en BUT MMI (IUT de Meaux).
+Warrick Mansoibou, étudiant récemment diplômé d'un BUT MMI (IUT de Meaux).
